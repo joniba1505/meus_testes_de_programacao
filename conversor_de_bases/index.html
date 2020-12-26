@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="José Nilton Barbosa Meira">
+    <meta name="description" content="Essa ferramenta tem por objetivo aplicar a conversão de bases, como para a base binária, octal e hexadecimal.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <title>Conversor de Bases</title>
+
+</head>
+<body>
+    <div class="container">
+    <h1>Conversor de Bases</h1>
+
+    <form action="" method="post">
+<label for="numero"> Digite o número a ser convertido:</label>
+<input type="number" name="" id="numero" placeholder="Digite qualquer número na base 10">
+<br>    
+<label for="numero-base">Escolha a base para a qual deseja converter o número: </label> <br>
+<input type="radio" name="tipo-base" id="binária" value="Binária">
+<label for="binaria"> Binária</label> <br>
+<input type="radio" name="tipo-base"" id="octal" value="Octal">
+<label for="octal"> Octal</label><br>
+<input type="radio" name="tipo-base" id="hexadecimal" value="Hexadecimal">
+<label for="hexadecimal"> Hexadecimal</label>
+<br>
+
+<input type="button" value="Converter" onclick="converterParaBase()">
+</form>
+
+    </div>
+
+
+<script src="js/script.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
