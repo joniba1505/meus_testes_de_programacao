@@ -1,3 +1,4 @@
+let resultado = document.querySelector(".resultado");
 
 function converterParaBase() {
     
@@ -5,9 +6,7 @@ function converterParaBase() {
 let numeroDecimal = Number(numero.value);
 base = selecionarBase();
 let numeroConvertido = numeroDecimal.toString(base);
-alert(`${numeroDecimal} na base 10 equivale a ${numeroConvertido} na base ${base}.`);
-numero.value = "";
-numero.focus();
+ resultado.innerHTML = `${numeroDecimal} na base 10 equivale a ${numeroConvertido} na base ${base}.`;
 }
 
 function selecionarBase() {
@@ -37,3 +36,9 @@ function getRadioValor(name) {
 return null;
 }
 
+function limparResultado() {
+    resultado.innerHTML = "";
+    numero.value = "";
+numero.focus();
+
+}

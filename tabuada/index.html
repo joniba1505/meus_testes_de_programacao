@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+
+    <h1>Cálculo de tabuada</h1>
+<label for="numero"> Digite um número:</label> <br>
+<input type="number" id="numero" placeholder="Digite um número de 1 a 10" required min="1" max="10"> <br>
+
+    <button onclick="mostrarTabuada()"> Mostrar Tabuada</button> <br>
+<button onclick="limparTabuada()"> Limpar Tabuada</button> <br>
+
+<div id="resultado"></div>
+    </div>
+
+    <script src="calculoTabuada.js"></script>
+</body>
+</html>
